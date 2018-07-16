@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Primary color of app (shown in app bar)-->
+    <color name="primary_color">#18392b</color>
+    <!--Primary dark color of the app (shown in the status bar)-->
+    <color name="primary_dark_color">#444444</color>
+    <!--REPLACE Accent Color for selected object-->
+    <color name="gray_bg">#a69eb0</color>
+
+    <color name="category_dining">#c07c99</color>
+    <color name="category_activities">#907c99</color>
+    <color name="category_dispensaries">#607c99</color>
+    <color name="category_information">#307c99</color>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <!--Name String for Application [Char Limit=12]-->
+    <string name="app_name">Tour Guide</string>
+
+    <!--Tab name for Dining Category [Char Limit=20]-->
+    <string name="category_dining">Dining</string>
+
+    <!--Tab name for Activities Category [Char Limit=20]-->
+    <string name="category_activities">Activities</string>
+
+    <!--Tab name for Dispensaries Category [Char Limit=20]-->
+    <string name="category_dispensaries">Dispensaries</string>
+
+    <!--Tab name for Information Category [Char Limit=20]-->
+    <string name="category_information">Information</string>
+
+
+</resources>
