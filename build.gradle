@@ -22,6 +22,10 @@ allprojects {
     }
 }
 
+ext {
+    supportVersion = '27.1.1'
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

@@ -18,7 +18,7 @@ public class GuideWordAdapter  extends ArrayAdapter<GuideWord> {
     //Resource ID for BG Color for this list
     private int mColorResourceId;
 
-    public GuideWordAdapter (Activity context, ArrayList<GuideWord> location, int mColorResourceId){
+    public GuideWordAdapter (Activity context, ArrayList<GuideWord> location, int colorResourceId){
 
         super(context, 0, location);
         mColorResourceId = colorResourceId;
@@ -30,7 +30,7 @@ public class GuideWordAdapter  extends ArrayAdapter<GuideWord> {
         //check if existing view is in use else inflate view
     View listConstructView=convertView;
 
-    if (listConstructView) == null) {
+    if (listConstructView == null) {
         listConstructView= LayoutInflater.from(getContext()).inflate(R.layout.list_construct, parent, false);}
         //get guide word at this index position
         GuideWord currentLocation =getItem(position);
@@ -54,7 +54,7 @@ public class GuideWordAdapter  extends ArrayAdapter<GuideWord> {
             imageView.setVisibility(View.VISIBLE);}
             else{
                 //Otherwise hide ImageView (set visibility to GONE
-                imageView.setVisibility(View.GONE);
+                imageView.setVisibility(View.GONE);}
 
                 //Set theme color for the List Construct
                 View constructText=listConstructView.findViewById(R.id.construct_text);
@@ -64,7 +64,8 @@ public class GuideWordAdapter  extends ArrayAdapter<GuideWord> {
 
                 //Return multi-element TextView list layout for display in ListView R.id.location_text_view
                 return LocationView;
-            }
+
         }
-    }
 }
+
+
