@@ -31,25 +31,49 @@ public class DispensariesFragment extends Fragment {
 
         //Creates GuideWord ArrayList for this fragment
         final ArrayList<GuideWord> location = new ArrayList<GuideWord>();
-        location.add(new GuideWord("Palisade Wineries List","https://visitpalisade.com/wineries-and-spirits/ -Reservations Recommended",R.drawable.wineries));
-        location.add(new GuideWord("Randy's Southside Diner", "2430 North Avenue", R.drawable.randys_ssd));
-        location.add(new GuideWord("Main Street Cafe", "504 Main Street", R.drawable.main_street_cafe));
-        location.add(new GuideWord("Pufferbelly Station Restaurant", "337 South 1st Street", R.drawable.pufferbelly));
-        location.add(new GuideWord("626 on Rood Modern Cuisine and Winebar", "2430 North Avenue", R.drawable.six_two_six));
-        location.add(new GuideWord("Il Bistro Italiano", "400 Main Street", R.drawable.il_bistro_italiano));
-        location.add(new GuideWord("Bin 707 Foodbar", "225 North 5th Street", R.drawable.bin_seven_o_seven));
-        location.add(new GuideWord("Ginger Oriental Restaurant", "2381 Patterson Road", R.drawable.ginger));
-        location.add(new GuideWord("Rib City Grill", "2830 North Avenue", R.drawable.rib_city));
-        location.add(new GuideWord("Junct'n Square Pizza", "119 North 7th Street", R.drawable.junct_n_square));
-        location.add(new GuideWord("Food Dudes Delivery Service", "fooddudesdelivery.com/grandjunction", R.drawable.food_dudes));
-        location.add(new GuideWord("Grub Gofers Delivery Service", "www.grubgofers.com/", R.drawable.grub_gofers));
+        location.add(new GuideWord(
+                "https://www.tumbleweed420.com",
+                "Tumbleweed Dispensary -De Beque\nMon-Sun 9a-10p" +
+                        "\n2185 45 1/2 Road, De Beque CO 81630",R.drawable.tumbleweed_debeque));
+        location.add(new GuideWord(
+                "https://www.tumbleweed420.com/location/parachute",
+                "Tumbleweed -Parachute \nMon-Sun 9a-9p (Drive Thru Th-Sun 3p-11p)" +
+                        "\n150 S Columbine Court, Parachute CO 81635", R.drawable.tumbleweed_drive_thru));
+        location.add(new GuideWord(
+                "https://kgcolorado.com",
+                "Kush Gardens \nMon-Sat 9a-8p Sun 9a-7p" +
+                        "\n4550 US 6, De Beque CO 81630", R.drawable.kush_gardens));
+        location.add(new GuideWord(
+                "https://coloweedery.com",
+                "Colorado Weedery \nMon-Sun 9a-8p" +
+                        "\n125 Peach Street Unit C, Palisade CO 81526", R.drawable.colorado_weedery));
+        location.add(new GuideWord(
+                "https://thegreenjoint.com/locations/parachute",
+                "The Green Joint \nMon-Sun 9a-9p" +
+                        "\n315 E 1st Street, Parachute CO 81635", R.drawable.the_green_joint));
+        location.add(new GuideWord(
+                "https://www.elkmountaintradingpost.co/",
+                "Elk Mountain Trading Post \nMon-Sun 9a-10p" +
+                        "\n170 E 3rd Street, De Beque CO 81630", R.drawable.elk_mountain_trading_post));
+        location.add(new GuideWord(
+                "https://budsltd.com",
+                "Buds Premium Cannabis -De Beque \nMon-Sun 9a-10p" +
+                        "\n2034 I-70 Frontage Road, De Beque CO 81630", R.drawable.buds_ltd));
+        location.add(new GuideWord(
+                "https://budsltd.com",
+                "Buds Ltd Premium Cannabis -Parachute \nMon-Wed 9a-10p Thu-Sun 9a-11p" +
+                        "\n104 Cardinal Way, Parachute CO 81635", R.drawable.buds_ltd));
+        location.add(new GuideWord(
+                "https://www.facebook.com/Tokin-Tipi-177160262842490/",
+                "The Tokin Tipi \nMon-Sun 9a-8p" +
+                        "\n393 E 2nd Street, Parachute CO 81635", R.drawable.tokin_tipi));
 
         // Creates an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will
         // set to display a single word.
-        GuideWordAdapter adapter = new GuideWordAdapter(getActivity(), location, R.color.category_dining);
+        GuideWordAdapter adapter = new GuideWordAdapter(getActivity(), location, R.color.category_dispensaries);
 
         // Finds the {@link ListView} object in the view heirarchy of the {@link Activity}.
         // There is be a  {@link ListView} with the view id named list which is declared in
