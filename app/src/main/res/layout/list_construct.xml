@@ -7,41 +7,22 @@
     android:minHeight="@dimen/list_construct_height" >
 
     <ImageView
-        android:layout_width="@dimen/list_construct_height"
-        android:layout_height="@dimen/list_construct_height"
-        android:id="@+id/construct_image"/>
+        android:id="@+id/construct_image"
+        style="@style/image_construct" />
 
     <LinearLayout
         android:id="@+id/construct_text"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/list_construct_height"
-        android:orientation="vertical"
-        android:layout_toRightOf="@+id/construct_image"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:padding="16dp">
+        style="@style/construct_text">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_gravity="bottom"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
             android:id="@+id/feature_text_view"
-            tools:text="Feature Information" />
+            tools:text="Feature Information"
+            style="@style/feature_text_view" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
             android:id="@+id/location_text_view"
-            tools:text="Location Information" />
+            tools:text="Location Information"
+            style="@style/location_text_view" />
 
     </LinearLayout>
 

@@ -36,17 +36,17 @@ public class GuideWordAdapter  extends ArrayAdapter<GuideWord> {
         GuideWord currentLocation =getItem(position);
 
         //Locate Feature XML TextView from list_construct via R.id
-        TextView FeatureView=(TextView) listConstructView.findViewById(R.id.feature_text_view);
+        TextView FeatureView= listConstructView.findViewById(R.id.feature_text_view);
         //Get View from GuideWordAdapter and set view with Feature GuideWord
         FeatureView.setText(currentLocation.getFeatureData());
 
         // Locate Location XML TextView from list_construct via R.id
-        TextView LocationView=(TextView) listConstructView.findViewById(R.id.location_text_view);
+        TextView LocationView= listConstructView.findViewById(R.id.location_text_view);
         //Get View from GuideWordAdapter and set with Location GuideWord
         LocationView.setText(currentLocation.getLocationData());
 
         //Locate Image from list_construct via R.drawable ID
-        ImageView imageView=(ImageView) listConstructView.findViewById(R.id.construct_image);
+        ImageView imageView= listConstructView.findViewById(R.id.construct_image);
         if (currentLocation.hasImage()){
             //Set ImageView with current image
             imageView.setImageResource(currentLocation.getImageResourceId());
@@ -63,7 +63,7 @@ public class GuideWordAdapter  extends ArrayAdapter<GuideWord> {
                 constructText.setBackgroundColor(color);
 
                 //Return multi-element TextView list layout for display in ListView R.id.location_text_view
-                return LocationView;
+                return listConstructView;
 
         }
 }

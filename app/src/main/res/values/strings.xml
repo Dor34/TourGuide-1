@@ -14,5 +14,12 @@
     <!--Tab name for Information Category [Char Limit=20]-->
     <string name="category_information">Information</string>
 
+    <!--Location and Feature Information for Dining Category-->
+    <string name="wineries_location">https://visitpalisade.com/wineries-and-spirits/</string>
+    <string name="wineries_feature">Palisade Wineries (Reservations recommended)</string>
+
+    <string name="randys_location">2430 North Avenue  \nhttps://www.randyssouthsidediner.com</string>
+    <string name="randys_feature">Randy\'s Southside Diner</string>
+
 
 </resources>

@@ -1,16 +1,13 @@
 package com.example.android.tourguide;
 
 import android.os.Bundle;
-import android.content.Context;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-
+import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
@@ -29,43 +26,41 @@ public class DiningFragment extends Fragment {
     //Creates GuideWord ArrayList for this fragment
     final ArrayList<GuideWord> location = new ArrayList<GuideWord>();
     location.add(new GuideWord(
-    "https://visitpalisade.com/wineries-and-spirits/ -Reservations Recommended",
-    "Palisade Wineries",R.drawable.wineries));
+        "https://visitpalisade.com/wineries-and-spirits/",
+        "Palisade Wineries -Reservations Recommended",R.drawable.wineries));
     location.add(new GuideWord(
-    "2430 North Avenue  https://www.randyssouthsidediner.com",
-    "Randy's Southside Diner", R.drawable.randys_ssd));
+        "https://www.randyssouthsidediner.com",
+        "Randy's Southside Diner\n2430 North Avenue", R.drawable.randys_ssd));
     location.add(new GuideWord(
-    "504 Main Street  https://www.mainstreetcafegj.com",
-    "Main Street Cafe", R.drawable.main_street_cafe));
+        "https://www.mainstreetcafegj.com",
+        "Main Street Cafe\n504 Main Street", R.drawable.main_street_cafe));
     location.add(new GuideWord(
-    "337 South 1st Street  " +
-    "https://www.facebook.com/Pufferbelly-Restaurant-638880192855626/",
-    "Pufferbelly Station Restaurant", R.drawable.pufferbelly));
+        "https://www.facebook.com/Pufferbelly-Restaurant-638880192855626/",
+        "Pufferbelly Station Restaurant\n337 South 1st Street", R.drawable.pufferbelly));
     location.add(new GuideWord(
-    "2430 North Avenue  https://www.626onrood.com",
-    "626 on Rood Modern Cuisine and Winebar", R.drawable.six_two_six));
+        "https://www.626onrood.com",
+        "626 on Rood Modern Cuisine and Winebar\n2430 North Avenue", R.drawable.six_two_six));
     location.add(new GuideWord(
-    "400 Main Street https://ilbistroitaliano.com",
-    "Il Bistro Italiano", R.drawable.il_bistro_italiano));
+        "https://ilbistroitaliano.com",
+        "Il Bistro Italiano\n400 Main Street", R.drawable.il_bistro_italiano));
     location.add(new GuideWord(
-    "225 North 5th Street  https://www.bin707.com",
-    "Bin 707 Foodbar", R.drawable.bin_seven_o_seven));
+        "https://www.bin707.com",
+        "Bin 707 Foodbar\n225 North 5th Street", R.drawable.bin_seven_o_seven));
     location.add(new GuideWord(
-    "2381 Patterson Road  https://gingeroriental.com",
-    "Ginger Oriental Restaurant", R.drawable.ginger));
+        "https://gingeroriental.com",
+        "Ginger Oriental Restaurant\n2381 Patterson Road", R.drawable.ginger));
     location.add(new GuideWord(
-    "2830 North Avenue  " +
-    "https://https://ribcity.com/rib-city-menu-colorado-grand-junction-fruita-rifle-montrose/",
-    "Rib City Grill", R.drawable.rib_city));
+        "https://ribcity.com/rib-city-menu-colorado-grand-junction-fruita-rifle-montrose/",
+        "Rib City Grill\n2830 North Avenue", R.drawable.rib_city));
     location.add(new GuideWord(
-    "119 North 7th Street  https://www.jctsquare.com",
-    "Junct'n Square Pizza", R.drawable.junct_n_square));
+        "https://www.jctsquare.com",
+        "Junct'n Square Pizza\n119 North 7th Street", R.drawable.junct_n_square));
     location.add(new GuideWord(
-    "https://fooddudesdelivery.com/grandjunction",
-    "Food Dudes Delivery Service", R.drawable.food_dudes));
+        "https://fooddudesdelivery.com/grandjunction",
+        "Food Dudes Delivery Service", R.drawable.food_dudes));
     location.add(new GuideWord(
-    "https://www.grubgofers.com/",
-    "Grub Gofers Delivery Service", R.drawable.grub_gofers));
+        "https://www.grubgofers.com/",
+        "Grub Gofers Delivery Service", R.drawable.grub_gofers));
 
     // Creates an {@link ArrayAdapter}, whose data source is a list of Strings. The
     // adapter knows how to create layouts for each item in the list, using the
@@ -78,7 +73,7 @@ public class DiningFragment extends Fragment {
     // Finds the {@link ListView} object in the view heirarchy of the {@link Activity}.
     // There is a {@link ListView} with the view id named list_view which is declared in
     // the list_blueprint.xml file
-    ListView listView = (ListView) rootView.findViewById(R.id.list_view);
+    ListView listView = rootView.findViewById(R.id.list_view);
 
     // Makes the{@link ListView} use the {@link ArrayAdapter} so the {@link ListView} will display
     // list items for each location in the GuideWord list.
@@ -86,14 +81,19 @@ public class DiningFragment extends Fragment {
     // pass in 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
     listView.setAdapter(adapter);
 
+    //Sets OnItemClickListener on list_view to monitor item selection
     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-    //Logs location status currently present in index position for this activity
-    Log.v("Dining Fragment", "Current location:" + location);
-        }
 
+    //Gets item selected index position
+    GuideWord guideword = location.get(position);
+
+    //Shows location status currently present in selected index position for this activity via Toast message
+    Toast.makeText(getContext(),"List Item Selected:"+ guideword , Toast.LENGTH_LONG).show();
+        }
     });
+
     return rootView;
     }
 

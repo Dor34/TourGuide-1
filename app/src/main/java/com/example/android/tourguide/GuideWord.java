@@ -19,7 +19,7 @@ public class GuideWord {
      *
      * @param featureData is the feature information for this list segment
      */
-    public GuideWord(String featureData, String locationData)
+    public GuideWord(String locationData, String featureData)
     {mLocationData=locationData;
     mFeatureData=featureData;}
 
@@ -56,7 +56,5 @@ public class GuideWord {
      /**Returns whether img is avail or not for this GuideWord*/
      public boolean hasImage()
      {return mImageResourceId!=NO_IMAGE_PROVIDED;}
-
-
 
 }

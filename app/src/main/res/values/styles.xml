@@ -20,11 +20,83 @@
         <item name="tabIndicatorColor">@android:color/white</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
         <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
     </style>
 
     <!-- Text appearance style for a category tab -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">#20b2aa</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">cursive</item>
+    </style>
+
+    <style name="image_construct">
+        <item name="android:layout_width">@dimen/list_construct_height</item>
+        <item name="android:layout_height">@dimen/list_construct_height</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="feature_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="location_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="construct_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_construct_height</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_toRightOf">@+id/construct_image</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="list_blueprint">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="main_xml_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/primary_color</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="billboard_view">
+        <item name="android:background">@drawable/independence_rock</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="viewpager_display">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
     </style>
 
 
