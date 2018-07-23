@@ -27,43 +27,41 @@ public class ActivitiesFragment extends Fragment {
     //Creates GuideWord ArrayList for this fragment
     final ArrayList<GuideWord> location = new ArrayList<GuideWord>();
     location.add(new GuideWord(
-        "2469 Riverside Parkway  https://www.bananasfunpark.com",
-        "Bananas Family Fun Park",R.drawable.bananas));
+        getString(R.string.bananas_location),
+        getString(R.string.bananas_feature),R.drawable.bananas));
     location.add(new GuideWord(
-        "637 24 1/2 Road  https://spincitygj.com",
-        "Spin City Family Fun Center", R.drawable.spin_city));
+        getString(R.string.spin_city_location),
+        getString(R.string.spin_city_feature), R.drawable.spin_city));
     location.add(new GuideWord(
-        "655 Struthers Avenue  " +
-        "https://westerncoloradobotanicalgardens.org",
-        "Western Colorado Botanical Gardens", R.drawable.botanical_gardens));
+        getString(R.string.botan_gardens_location),
+        getString(R.string.botan_gardens_feature), R.drawable.botanical_gardens));
     location.add(new GuideWord(
-        "3002 N I70 Frontage Road  https://grandjunctionmotorspeedway.com",
-        "GJ Motor Speedway Kart Racing", R.drawable.gj_motor_speedway));
+        getString(R.string.gj_motor_speed_location),
+        getString(R.string.gj_motor_speed_feature), R.drawable.gj_motor_speedway));
     location.add(new GuideWord(
-        "115 32 Road  https://wcrda.com",
-        "Western Colorado Dragway", R.drawable.west_co_dragway));
+        getString(R.string.west_co_dragway_location),
+        getString(R.string.west_co_dragway_feature), R.drawable.west_co_dragway));
     location.add(new GuideWord(
-        "Rimrock Drive  https://www.nps.gov/colm/index.htm",
-        "Colorado National Monument", R.drawable.co_nat_monument));
+        getString(R.string.co_nat_monument_location),
+        getString(R.string.co_nat_monument_feature), R.drawable.co_nat_monument));
     location.add(new GuideWord(
-        "Delta, Garfield, and Mesa Counties  https://www.fs.usda.gov/gmug",
-        "Grand Mesa National Forest/Mesa Lakes", R.drawable.grand_mesa));
+        getString(R.string.gnd_mesa_nat_forest_location),
+        getString(R.string.gnd_mesa_nat_forest_feature), R.drawable.grand_mesa));
     location.add(new GuideWord(
-        "1055 I-70  http://cpw.state.co.us/placestogo/Parks/jamesmrobbcoloradoriver",
-        "Island Acres State Park Camping/RVs/Swimming", R.drawable.island_acres));
+        getString(R.string.island_acres_location),
+        getString(R.string.island_acres_feature), R.drawable.island_acres));
     location.add(new GuideWord(
-        "1800 11 8/10 Road  " +
-        "https://www.colorado.com/state-parks/highline-lake-state-park",
-        "Highline Lake State Park Camping/RVs/Boating/Swimming", R.drawable.highline_lake));
+        getString(R.string.highline_state_park_location),
+        getString(R.string.highline_state_park_feature), R.drawable.highline_lake));
     location.add(new GuideWord(
-        "https://www.visitgrandjunction.com/guided-rafting-float-tours",
-        "River Rafting/Float Tours", R.drawable.rafting));
+        getString(R.string.rafting_tours_location),
+        getString(R.string.rafting_tours_feature), R.drawable.rafting));
     location.add(new GuideWord(
-        "https://www.gjcity.org/residents/parks-recreation/",
-        "Grand Junction Parks and Recreation", R.drawable.parks_rec));
+        getString(R.string.gj_parks_rec_location),
+        getString(R.string.gj_parks_rec_feature), R.drawable.parks_rec));
     location.add(new GuideWord(
-        "2525 Riverside Parkway  https://www.glaciericearena.net",
-        "Glacier Ice Arena", R.drawable.glacier));
+        getString(R.string.glacier_location),
+        getString(R.string.glacier_feature), R.drawable.glacier));
 
     // Creates an {@link ArrayAdapter}, whose data source is a list of Strings. The
     // adapter knows how to create layouts for each item in the list, using the
