@@ -18,8 +18,147 @@
     <string name="wineries_location">https://visitpalisade.com/wineries-and-spirits/</string>
     <string name="wineries_feature">Palisade Wineries (Reservations recommended)</string>
 
-    <string name="randys_location">2430 North Avenue  \nhttps://www.randyssouthsidediner.com</string>
-    <string name="randys_feature">Randy\'s Southside Diner</string>
+    <string name="randys_location">https://www.randyssouthsidediner.com</string>
+    <string name="randys_feature">Randy\'s Southside Diner \n2430 North Avenue</string>
+
+    <string name="main_st_cafe_location">https://www.mainstreetcafegj.com</string>
+    <string name="main_st_cafe_feature">Main Street Cafe \n504 Main Street</string>
+
+    <string name="pufferbelly_location">https://www.facebook.com/Pufferbelly-Restaurant-638880192855626/</string>
+    <string name="pufferbelly_feature">Pufferbelly Station Restaurant \n337 South 1st Street</string>
+
+    <string name="six_two_six_location">https://www.626onrood.com</string>
+    <string name="six_two_six_feature">626 on Rood Modern Cuisine and Winebar \n2430 North Avenue</string>
+
+    <string name="il_bistro_location">https://ilbistroitaliano.com</string>
+    <string name="il_bistro_feature">Il Bistro Italiano \n400 Main Street</string>
+
+    <string name="bin_seven_o_seven_location">https://www.bin707.com</string>
+    <string name="bin_seven_o_seven_feature">Bin 707 Foodbar \n225 North 5th Street</string>
+
+    <string name="ginger_location">https://gingeroriental.com</string>
+    <string name="ginger_feature">Ginger Oriental Restaurant \n2381 Patterson Road</string>
+
+    <string name="rib_city_location">https://ribcity.com/rib-city-menu-colorado-grand-junction-fruita-rifle-montrose/</string>
+    <string name="rib_city_feature">Rib City Grill \n2830 North Avenue</string>
+
+    <string name="junct_n_square_location">https://www.jctsquare.com</string>
+    <string name="junct_n_square_feature">Junct\'n Square Pizza \n119 North 7th Street</string>
+
+    <string name="food_dudes_location">https://fooddudesdelivery.com/grandjunction</string>
+    <string name="food_dudes_feature">Food Dudes Delivery Service</string>
+
+    <string name="grub_gofers_location">https://www.grubgofers.com/</string>
+    <string name="grub_gofers_feature">Grub Gofers Delivery Service</string>
+
+    <!--Location and Feature String Data for Activities Category Fragment-->
+    <string name="bananas_location">https://www.bananasfunpark.com</string>
+    <string name="bananas_feature">Bananas Family Fun Park \n2469 Riverside Parkway</string>
+
+    <string name="spin_city_location">https://spincitygj.com</string>
+    <string name="spin_city_feature">Spin City Family Fun Center \n637 24 &#189; Road</string>
+
+    <string name="botan_gardens_location">https://westerncoloradobotanicalgardens.org</string>
+    <string name="botan_gardens_feature">Western Colorado Botanical Gardens \n655 Struthers Avenue</string>
+
+    <string name="gj_motor_speed_location">https://grandjunctionmotorspeedway.com</string>
+    <string name="gj_motor_speed_feature">GJ Motor Speedway Kart Racing \n3002 N I70 Frontage Road</string>
+
+    <string name="west_co_dragway_location">https://wcrda.com</string>
+    <string name="west_co_dragway_feature">Western Colorado Dragway \n115 32 Road</string>
+
+    <string name="co_nat_monument_location">https://www.nps.gov/colm/index.htm</string>
+    <string name="co_nat_monument_feature">Colorado National Monument \nRimrock Drive</string>
+
+    <string name="gnd_mesa_nat_forest_location">https://www.fs.usda.gov/gmug</string>
+    <string name="gnd_mesa_nat_forest_feature">Grand Mesa National Forest \n(Mesa, Delta, and Garfield Counties)</string>
+
+    <string name="island_acres_location">http://cpw.state.co.us/placestogo/Parks/jamesmrobbcoloradoriver</string>
+    <string name="island_acres_feature">Island Acres State Park \n1055 I-70</string>
+
+    <string name="highline_state_park_location">https://www.colorado.com/state-parks/highline-lake-state-park</string>
+    <string name="highline_state_park_feature">Highline State Park</string>
+
+    <string name="rafting_tours_location">https://www.visitgrandjunction.com/guided-rafting-float-tours</string>
+    <string name="rafting_tours_feature">River Rafting and Float Tours</string>
+
+    <string name="gj_parks_rec_location">https://www.gjcity.org/residents/parks-recreation/</string>
+    <string name="gj_parks_rec_feature">Grand Junction Parks and Recreation</string>
+
+    <string name="glacier_location">https://www.glaciericearena.net</string>
+    <string name="glacier_feature">Glacier Ice Arena \n2525 Riverside Parkway</string>
+
+
+    <!--Location and Feature String Data for Information Category Fragment-->
+    <string name="important_location">https://coloweedery.com/learn/</string>
+    <string name="important_feature">IMPORTANT guidelines regarding responsible and\n
+        legally compliant cannabis possession and consumption \nas a guest in our state</string>
+
+    <string name="etiquette_location">https://travel.mapquest.com/2016/12/05/10-things-colorado-weed-tourists-need-to-know-about-dispensary-e/</string>
+    <string name="etiquette_feature">10 Things Colorado Tourists need to know\n
+    about Dispensary Etiquette</string>
+
+    <string name="seventeen_things_location">https://www.outtherecolorado.com/gallery/17-things-know-visiting-colorado/</string>
+    <string name="seventeen_things_feature">17 Things you need to know before visiting Colorado</string>
+
+    <string name="country_jam_location">https://countryjam.com</string>
+    <string name="country_jam_feature">Country Jam Event Information</string>
+
+    <string name="gj_attractions_location">https://www.go-colorado.com/Grand-Junction/Attractions/#</string>
+    <string name="gj_attractions_feature">Grand Junction Attractions</string>
+
+    <string name="gj_event_festival_location">https://www.visitgrandjunction.com/events/festivals-fairs</string>
+    <string name="gj_event_festival_feature">Grand Junction Events and Festival Information</string>
+
+    <string name="gj_hiking_trails_location">https://www.visitgrandjunction.com/hiking-trails</string>
+    <string name="gj_hiking_trails_feature">Grand Junction Hiking Trails</string>
+
+    <string name="camping_location">http://www.hikercentral.com/campcounty/Colorado_Mesa.html</string>
+    <string name="camping_feature">Camping in Mesa County\n
+    (Please respect the lands and TREAD  LIGHTLY)</string>
+
+    <string name="co_parks_wildlife_location">https://cpw.state.co.us</string>
+    <string name="co_parks_wildlife_feature">Colorado State Parks and Wildlife </string>
+
+
+    <!--Location and Feature String Data for Dispensary Category Fragment-->
+    <string name="tumbleweed_de_beque_location">https://www.tumbleweed420.com</string>
+    <string name="tumbleweed_de_beque_feature">Tumbleweed Dispensary -De Beque\n
+        Mon-Sun 9a-10p
+        \n2185 45 &#189; Road,\n De Beque CO 81630</string>
+
+    <string name="tumbleweed_parachute_location">https://www.tumbleweed420.com/location/parachute</string>
+    <string name="tumbleweed_parachute_feature">Tumbleweed -Parachute\n
+        Mon-Sun 9a-9p \n(Drive Thru Th-Sun 3p-11p)
+        \n150 S Columbine Court,\n Parachute CO 81635</string>
+
+    <string name="kush_gardens_location">https://kgcolorado.com</string>
+    <string name="kush_gardens_feature">Kush Gardens \nMon-Sat 9a-8p Sun 9a-7p
+        \n4550 US 6,\n De Beque CO 81630</string>
+
+    <string name="co_weedery_location">https://coloweedery.com</string>
+    <string name="co_weedery_feature">Colorado Weedery \nMon-Sun 9a-8p
+        \n125 Peach Street Unit C,\n Palisade CO 81526</string>
+
+    <string name="green_joint_location">https://thegreenjoint.com/locations/parachute</string>
+    <string name="green_joint_feature">The Green Joint \nMon-Sun 9a-9p
+        \n315 E 1st Street,\n Parachute CO 81635</string>
+
+    <string name="elk_mtn_location">https://www.elkmountaintradingpost.co/</string>
+    <string name="elk_mtn_feature">Elk Mountain Trading Post \nMon-Sun 9a-10p
+        \n170 E 3rd Street,\n De Beque CO 81630</string>
+
+    <string name="buds_de_beque_location">https://budsltd.com</string>
+    <string name="buds_de_beque_feature">Buds Premium Cannabis -De Beque \nMon-Sun 9a-10p
+        \n2034 I-70 Frontage Road,\n De Beque CO 81630</string>
+
+    <string name="buds_ltd_parachute_location">https://budsltd.com</string>
+    <string name="buds_ltd_parachute_feature">Buds Ltd Premium Cannabis -Parachute \nMon-Wed 9a-10p Thu-Sun 9a-11p
+        \n104 Cardinal Way,\n Parachute CO 81635</string>
+
+    <string name="tokin_tipi_location">https://www.facebook.com/Tokin-Tipi-177160262842490/</string>
+    <string name="tokin_tipi_feature">The Tokin Tipi \nMon-Sun 9a-8p
+        \n393 E 2nd Street,\n Parachute CO 81635</string>
 
 
 </resources>
